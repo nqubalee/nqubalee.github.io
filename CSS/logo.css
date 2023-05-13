@@ -1,0 +1,208 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color:  rgb(255, 176, 189);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    min-height: 450px;
+    width: 450px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+}
+.section {
+    min-height: 450px;
+    width: 450px;
+    background: rgba(221, 104, 104, 0.5);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px soild rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0, 1);
+    backdrop-filter: blur(2rem);
+}
+.clr1,
+.clr2 {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 250ps;
+    width: 250px;
+    position: absolute;
+    border-radius: 50%;
+}
+.clr1 {
+    top: -70px;
+    right: -70px;
+}
+.clr2 {
+    bottom: -70px;
+    left: -70px;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:url('../image/kh.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+}
+.from-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+}
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 5px;
+    color: #fff;
+}.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget label a{
+    color: yellow;
+    text-decoration: none;
+}
+.forget label a{
+    background-color: pink;
+    color: rgb(223, 30, 46);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    transition: 0.4s;
+    
+}
+.forget label a:hover{
+    background-color: transparent;
+    border: 2px solid (#eeeeee);
+}
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background: salmon rgb(85, 180, 85);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.log{
+    margin-top: 20px;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid (#346136);
+
+}
+.register {
+    font-size: .9em;
+    color: #fff;
+    align-items: center;
+    margin: 25px 0 10px;
+}
+.register p{
+    text-align: center;
+}
+.register p a{
+    background-color: pink;
+    color: rgb(240, 10, 10);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.register p a:hover{
+    background-color: transparent;
+    border: 2px solid (#e21212);
+
+}
+.sp{
+    position: relative;
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: center;
+    background-color:  pink;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    border: 0.5px solid transparent;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.sp:hover{
+    background-color: pink;
+    border: 2px solid (#04db0f);
+}
+
+
+
+
+
+
+
+
+
+
