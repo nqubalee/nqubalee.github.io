@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naif Alqubalee</title>
-    <meta thhp-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="Best website ">
-    <meta name="keywords" content="naifalqubalee,alqubalee,naif muhammed alqubalee">
-    <link rel="stylesheet" href="CSS/page_home.css">
-    <link rel="icon" href="icon/second.png">
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <section class="home" id="home">
-        <nav>
-            <h2>Naif Alqubalee</h2>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">NQ</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li> <a href="#home">Gallery</a></li>
-                <li> <a href="#home">Projects</a></li>
-                <li><a href="#home">About</a></li>
+                <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                <li><a href="#" style="--navAni:2">About</a></li>
+                <li><a href="#" style="--navAni:3">Skills</a></li>
+                <li><a href="#" style="--navAni:4">Portfolio</a></li>
+                <li><a href="#" style="--navAni:5">Contact</a></li>
             </ul>
-            <a href="Logo.html" target="_blank" class="btn">Login</a>
-        </nav>
-
-            <div class="contant">
-            <div class="container-text">
-                <h3>This page is currently undergoing development.</h3>
-                
-                <a href="#" class="btn">Download CV</a>
-            </div>
-            <div class="media">
-                <a href="https://www.facebook.com/naif.alqubalee" target="_blank"> <img src="image/facebook.png" alt=""></a>
-                <a href="https://www.instagram.com/n_qubalee/" target="_blank"><img src="image/instagram.png"  alt=""></a>
-                <a href="https://twitter.com/naifalqubalee1" target="_blank"><img src="image/twitter.png" alt=""></a>
-                <a href=" https://wa.me/message/JQQESB6ILADHO1" target="_blank"><img src="icon/whatsapp.png" alt=""></a>
-                <a href="https://github.com/nq001" target="_blank"><img src="icon/github_white_logo_icon.png" alt=""></a>
-            </div>
-            
-            <div class="container-images">
-                <img src="image/kisspng-royalty-free-stock-photography-clip-art-welcome-5ac3661ca98986.0662626915227551006944.png" alt="" class="me">
-        
-                
-                
-            </div>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
         </div>
-    </section>
-    <!-- <footer class="about">
-        <div class="box">
-            <div class="card">
-                <!-- <img class="images" src="icon/about.png" alt="">
-                <h4 class="tii">About <span>Me</span></h4>
-                <br>
-                <div class="paragraph">
-                    <p>Welcome I am <span>Naif Al-Qubali</span></p>
-                    <p>
-                        I made this site <span>Just</span> for fun, I idid not <span>create</span> it to achieve <span>anything</span> else <br>
-                         Please <span>Injoy</span> our <span>Website</span>
-                    </p>
+    </header>
 
-                    <p class="end">All rights <span>reserved </span>to <span>me</span> &copy;</p>
+
+    <section class="container">
+        <div class="main">
+            <div class="images">
+                <img src="129228748.png" alt="" class="img-w">
+                <span class="bg-effect-1">
+                <span class="bg-effect-1"></span>
+
+                </span>
+            </div>
+            <div class="detail">
+                <h3>Hi, I'm</h3>
+                <h1><span style="color:#f9532d;">Naif</span> Alqubalee</h1> 
+                <p>I'm a professional in Web Developer and Design Descktop Apps.
+                     Our Main Goal to help & Satisficed the Local & Global Clients by web development solutions
+                </p>  
+                <div class="social">
+
+                    <a href="https://www.instagram.com/n_qubalee/" target="_blank" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://github.com/nq001" target="_blank" style="--socialAni:3"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.facebook.com/naif.alqubalee" target="_blank" style="--socialAni:4"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://wa.me/message/JQQESB6ILADHO1" target="_blank" style="--socialAni:4"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://twitter.com/naifalqubalee1" target="_blank" style="--socialAni:4"><i class='bx bxl-twitter'></i></a>
+
                 </div>
             </div>
         </div>
-        
-    </footer> --> 
+    </section>
+
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');    
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
 </body>
+
 </html>
